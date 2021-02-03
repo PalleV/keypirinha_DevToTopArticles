@@ -78,17 +78,11 @@ class DevToTopArticles(kp.Plugin):
         pass
 
     def on_execute(self, item, action):
-        kpu.web_browser_command(
-            url = item.target(),
-            execute = True
-        )
-        pass
-
-    def on_activated(self):
-        pass
-
-    def on_deactivated(self):
-        pass
-
-    def on_events(self, flags):
+        if (action is None or (action is not None and action.name() == self.ACTION_OPEN_URL)):
+            kpu.web_browser_command(
+                url = item.target(),
+                execute = True
+            )
+        else:
+            kpu.set_clipboard(item.target())
         pass

@@ -1,11 +1,10 @@
 # Keypirinha Plugin: DevToTopArticles
 
-This is DevToTopArticles, a plugin for the
+This is Dev.to Top Articles, a plugin for the
 [Keypirinha](http://keypirinha.com) launcher.
 
-**TODO:** write a brief description of this package. Optionally add a
-screenshot.
-
+When typing "devto", you can select this item and see the top 10 articles on dev.to.
+Browse an article or choose to copy the URL to share.
 
 ## Download
 
